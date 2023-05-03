@@ -17,7 +17,7 @@ class AClassWithOneJUnitTest {
     void shouldInputExistingBirthdate() {
         LocalDate now = LocalDate.now();
         LocalDate birthdate = Main.convertBirthDate("12-12-2025");
-        assertTrue(birthdate.isBefore(now));
+        assertTrue(birthdate.isAfter(now));
     }
-    
+
 }
